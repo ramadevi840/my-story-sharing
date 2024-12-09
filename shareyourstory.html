@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.shutterstock.com/image-illustration/share-your-story-on-speech-260nw-2305933615.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="share-story-section">
+            <h2>Share Your Story</h2>
+            <form id="story-form">
+                <label for="story-type">Story Type:</label>
+                <select id="story-type" required>
+                    <option value="">Select</option>
+                    <option value="Inspiration">Inspiration</option>
+                    <option value="Success">Success</option>
+                    <option value="Failure">Failure</option>
+                    <option value="Motivation">Motivation</option>
+                    <option value="Love">Love</option>
+                </select>
+
+                <label for="story-title">Title:</label>
+                <input type="text" id="story-title" placeholder="Enter your story title" required>
+
+                <label for="story-content">Your Story:</label>
+                <textarea id="story-content" placeholder="Write your story here..." rows="6" required></textarea>
+
+                <button type="submit">Submit Story</button>
+            </form>
+        </section>
+    </main>
+
+   
+
+    <script src="shareyourstory.js"></script>
+</body>
+</html>
